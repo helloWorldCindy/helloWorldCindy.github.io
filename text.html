@@ -1,109 +1,223 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <script type='text/javascript' src='js/portfolio-link.js'></script>
-<!--     <script type='text/javascript' src='js/jquery.nav.js'></script>
-    <script type='text/javascript' src='js/jquery.parallax-1.1.3.js'></script> -->
-    <script type='text/javascript' src='js/scripts.js'></script>
-<!--     <script type='text/javascript' src='js/slider.js'></script> -->
-<!--     <script type='text/javascript' src='node_modules/fullpage.js/jquery.fullPage.css'></script>
-    <script type='text/javascript' src='node_modules/fullpage.js/vendors/jquery.easings.min.js'></script>
-    <script type="text/javascript" src="node_modules/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="node_modules/fullpage.js/jquery.fullPage.js"></script> -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery.js
-    /1.11.1/jquery.min.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed fullscreen backgrounds - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+	 <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<meta name="Resource-type" content="Document" />
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="../helloWorldCindy.github.io/node_modules/fullpage.js/jquery.fullPage.css" />
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/styleTest.css">
+	<script type='text/javascript' src='js/portfolio-link.js'></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous">
   </script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald:400,700' rel='stylesheet' type='text/css'>
 <!--   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
 
   <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-  <script src="vendors/jquery.easings.min.js"></script>
+  <script src="../helloWorldCindy.github.io/node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
   <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-  <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="../helloWorldCindy.github.io/node_modules/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
 
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="../helloWorldCindy.github.io/node_modules/fullpage.js/jquery.fullPage.js"></script>
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
 
 
-  </head>
-  <body>
-    <div class="container" id="fullpage">
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+		background-attachment: fixed;
+	}
 
-      <div class="intro section active">
-        <!-- First Page -->
-        <div class="col-md-12">
-          <p class="name"> QIANYI YU</p>
-          <hr class="top2">
-          <p class="smallWord"> Tough times don't last, Tough people do.</p>
-          <div class="row top1">
-              <img class="img-circle img-reponsive selfie centerImage " src="image/selfie.jpg">
-          </div>
-          <div class="row">
-            <div class="btnholder">
-              <a href="#self"><button class="scroll" id="b1" type="button" style="  border: 5px solid white;color: white"></button></a>
-              <script type="text/javascript">$("#b1").click(function() {
-                $('html, body').animate({
-                  scrollTop: $("#self").offset().top
-                }, 2000);
-              });</script>
-            </div>
-          </div>
-        </div>
-      </div>
-       <!-- Second Page -->
-      <div class="about section active">
-        <div class="col-md-12">
-          <div class="boxed"></div>
-        <div>
-        <div class="row">
-          <div class="col-md-12">
-          <p id="self" style="position: absolute; left: 67%; color: white; font-size: 60px;font-family: 'Poiret One', cursive; text-align: center;font-weight: bold;">  ABOUT ME</p>
-         </div>
-         <div class="row">
-          <p class="introduction" style="width:40%;position: absolute;  margin-top: 100px; left: 60%; color: white; font-size: 15px; text-align: center;">Bachelor of Computer Science , Computer and Internet Security  September 2014-Present
-            <br>Carleton University , Ottawa , Ontario</p>
-          </div>
-          <div class="row">
-            <p class="introduction" style="width:40%;position: absolute;margin-top:200px; left: 62%; color: white; font-size: 15px; line-height:180%">&nbsp;&nbsp;I am Qianyi Yu, you can call me cindy. I am a third year student in Carleton University, studying in computer science program. I got interested in programming when I took my first computer science course at high school. Those clean, neat and brilliant coding language seem to be a whole new world to me. And that is the reason why I chose computer science as my major. <br>
-            &nbsp;&nbsp;I gained knowledge of different programming languages while I was taking courses in Carleton University, such as Java, C, C++, Python, Processing, HTML, CSS and Javascript. Now I am trying to use all the programming related knowledge to do my own projects, you can check them out at the following of my portfolio.<br>
-            &nbsp;&nbsp;Other than coding, I also love sport, photography, drawing, movie, reading, image and video editing. These hobbies help me enjoy my life and make me a positive and highly-motivated person. Since I love socializing, I often attend the volunteer activities to know more people and comminicate with them. It is always be a pleasure to make friends with other people.<br>
-            &nbsp;&nbsp;You can see my projects and contact informations when scroll down the web page, feel free to have a look and contact me.</p>
-          </div>
-         </div>
-        </div>
-      </div>
-      <!-- Third Page -->
-                   <div class="row">
-                <div class="btnholder">
-                <a href="#profiles"><button class="scroll" id="b2" type="button" style="margin-top:600px"></button></a>
-                <script type="text/javascript">$("#b2").click(function() {
-                $('html, body').animate({
-                  scrollTop: $("#profiles").offset().top
-                }, 2000);
-              });</script>
-                </div>
-              </div>
-    </div>
-    <div class="project-side section active" id="profiles">
-       <div class="col-md-12">
-               <p class="name" style="text-align: center; color:white; line-height: 150%;"> MY PROJECTS</p>
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(image/cat.jpg);
+		padding:6%;
+		verticalCentered: true;
+	}
+	#section1{
+		/*background-image: url(image/bg2.jpg);
+		verticalCentered: true;*/
+	}
+	#section2{
+		background-image: url(image/bg3.jpg);
+		verticalCentered: true;
+	}
+	#section3{
+		background-image: url(image/bg4.jpg);
+		verticalCentered: true;
+	}
+	#section2 h1{
+		color: #000;
+	}
 
-            </div>
-   <!--    <div class="portfolio-start"></div> -->
-            <!-- Portfolio container -->
-          <div class="portfolio-container">
+/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(image/bg2.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size: cover;
+	}
+	#slide2{
+
+		background-image: url(image/sl2.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size: cover;
+
+	}
+	#slide3{
+
+		background-image: url(image/sl1.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		background-size: cover;
+
+	}
+	#slide4{
+
+	background-image: url(image/sl3.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size: cover;
+
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../helloWorldCindy.github.io/node_modules/fullpage.js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+
+				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+				css3:false
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+
+</head>
+<body>
+
+
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#section0">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#section1">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#section2">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#section3">Fourth slide</a></li>
+</ul>
+
+
+<div id="fullpage">
+	<ul id="menu">
+		<li data-menuanchor="firstPage"><a href="#section0">First slide</a></li>
+		<li data-menuanchor="secondPage"><a href="#section1">Second slide</a></li>
+		<li data-menuanchor="3rdPage"><a href="#section2">Third slide</a></li>
+		<li data-menuanchor="4thpage"><a href="#section3">Fourth slide</a></li>
+	</ul>
+	<div class="section " id="section0">
+	          <p class="name"> QIANYI YU</p>
+	          <p class="smallWord"> Tough times don't last, Tough people do.</p>
+	          <div>
+			  	<img class="img-circle img-reponsive selfie centerImage " src="image/selfie.jpg">
+			  </div>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" style="text-align: center;padding-top:3%" id="slide1">
+			<h1 class="intro" style="font-size: 35px">I AM A</h1>
+			<h1 class="intro" style="color:#79A8FF;" > THIRD YEAR STUDENT</h1>
+		</div>
+		<div class="slide" id="slide2" style="text-align: center;padding-top:3%">
+		<h1 class="intro" style="font-size: 35px">I AM A</h1>
+		<h1 class="intro" style="color:#79A8FF;">PROGRAMMER</h1>
+		</div>
+
+		<div class="slide" id="slide3" style="text-align: center;padding-top:3%">
+		<h1 class="intro" style="font-size: 35px">I AM A</h1>
+		<h1 class="intro" style="color:#79A8FF;">PROBLEM SOLVER</h1>
+		</div>
+
+		<div class="slide" id="slide4" style="text-align: center;padding-top:3%">
+		<h1 class="intro" style="font-size: 35px">I AM A</h1>
+		<h1 class="intro" style="color:#79A8FF;">QUICK LEARNER</h1>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<p class="name" style="text-align: center; color:white;"> MY PROJECTS</p>
+		            <!-- Portfolio container -->
+          <div class="portfolio-container" >
                <div class="row">
                 <!-- Portfolio Item-->                   
                 <div class="portfolio-item mt photography">
@@ -514,46 +628,27 @@
        </div>
       </div>
             <!-- Portfolio container end-->
-            <div class="row">
-              <div class="btnholder">
-              <a href="#contact-me"><button class="scroll" id="b3" type="button" style="  border: 5px solid white;color: white"></button></a>
-              <script type="text/javascript">$("#b3").click(function() {
-                $('html, body').animate({
-                  scrollTop: $("#contact-me").offset().top
-                }, 2000);
-              });</script>
-              </div>
-            </div>
-    </div>
+	</div>
 
-    <!-- contact page -->
-    <div class="contact-page section active" id="contact-me">
-      <div class="row">
+	<div class="section" id="section3" style="padding-top:10%">
+	 <div class="row">
         <div class="col-md-4">
-         <p class="name" style="margin-top:100px;font-size: 55px;font-weight: bolder;font-family: 'Oswald', sans-serif;letter-spacing: 6px;"> CONTACT INFORMATION</p>
+         <p class="name" style="font-size: 55px;font-weight: bolder;font-family: 'Oswald', sans-serif;letter-spacing: 6px;"> CONTACT INFORMATION</p>
          <ul style="font-family: 'Oswald', sans-serif;">
 
-            <li><image src="image/email.png"><p><br>cindyyu3@cmail.carleton.ca</p></li>
+            <li><image src="image/email.png"><p>cindyyu3@cmail.carleton.ca</p></li>
 
 
-            <li><image src="image/phone.png"><p><br>(647)-6098578</p></li>    
+            <li><image src="image/phone.png"><p>(647)-6098578</p></li>    
 
 
-            <li><image src="image/address.png"><p><br>apt 1809, 2201 riverside<br> Ottwa, ON, Canada</p></li>
+            <li><image src="image/address.png"><p>apt 1809, 2201 riverside<br> Ottwa, ON, Canada</p></li>
                    
           </ul>
         </div>
     </div>
-     <div class="btnholder">
-              <a href="#"><button class="back-to-index" id="b4" type="button" style="  border: 5px solid white;color: white"></button></a>
-              <script type="text/javascript">$("#b4").click(function() {
-                $('html, body').animate({
-                  scrollTop: $("#").offset().top
-                }, 2000);
-              });</script>
-            </div>
-
+	</div>
 </div>
 
-  </body>
+</body>
 </html>
