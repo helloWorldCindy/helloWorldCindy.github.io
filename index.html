@@ -161,6 +161,16 @@
 
 		});
 	</script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#loading-center").click(function() {
+				$("#loading").fadeOut(500);
+			})		
+		});
+		// $(window).load(function() {
+		// 	$("#loading").fadeOut(500);
+		// })
+	</script>
 
 
 </head>
@@ -171,21 +181,28 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
-<ul id="menu">
+<!-- <ul id="menu">
 	<li data-menuanchor="firstPage"><a href="#section0">First slide</a></li>
 	<li data-menuanchor="secondPage"><a href="#section1">Second slide</a></li>
 	<li data-menuanchor="3rdPage"><a href="#section2">Third slide</a></li>
 	<li data-menuanchor="4thpage"><a href="#section3">Fourth slide</a></li>
-</ul>
+</ul> -->
+<div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div id="object"></div>
+</div>
+</div>
 
+</div>
 
 <div id="fullpage">
-	<ul id="menu">
+	<!-- <ul id="menu">
 		<li data-menuanchor="firstPage"><a href="#section0">First slide</a></li>
 		<li data-menuanchor="secondPage"><a href="#section1">Second slide</a></li>
 		<li data-menuanchor="3rdPage"><a href="#section2">Third slide</a></li>
 		<li data-menuanchor="4thpage"><a href="#section3">Fourth slide</a></li>
-	</ul>
+	</ul> -->
 	<div class="section " id="section0">
 	          <p class="name"> QIANYI YU</p>
 	          <p class="smallWord"> Tough times don't last, Tough people do.</p>
@@ -641,8 +658,6 @@
 
             <li><image src="image/phone.png"><p>(647)-6098578</p></li>    
 
-
-            <li><image src="image/address.png"><p>apt 1809, 2201 riverside<br> Ottwa, ON, Canada</p></li>
                    
           </ul>
         </div>
